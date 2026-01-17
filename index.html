@@ -1,10 +1,194 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My Portfolio</title>
-  </head>
-  <body>
-    <h1>Hello, this is my portfolio</h1>
-    <p>It works 🎉</p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lysandra's bag</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+        }
+
+        /* Navigation Bar */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #ffffff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .bag {
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            color: #2d5016;
+        }
+
+        .sections {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+        }
+
+        .sections a {
+            font-family: 'Noto Sans JP', sans-serif;
+            color: #000000;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .sections a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content */
+        main {
+            margin-top: 80px;
+        }
+
+        /* Home Section with Stickers */
+        #home {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            padding: 40px;
+        }
+
+        .sticker-link {
+            text-align: center;
+            text-decoration: none;
+            color: #1a1a1a;
+        }
+
+        .sticker-link img {
+            width: 200px;
+            height: 200px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .sticker-link:hover img {
+            transform: rotate(15deg);
+        }
+
+        .sticker-link p {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+
+        /* Content Sections */
+        section {
+            min-height: 100vh;
+            padding: 100px 40px;
+        }
+
+        section h2 {
+            font-size: 48px;
+            margin-bottom: 30px;
+        }
+
+        section h3 {
+            font-size: 24px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="bag">lysandra's bag</div>
+        <ul class="sections">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#writing">Writing</a></li>
+            <li><a href="#photography">Photography</a></li>
+            <li><a href="#films">Films</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Home Section with Stickers -->
+        <section id="home">
+            <a href="#writing" class="sticker-link">
+                <img src="writing.png" alt="writing section">
+                <p>writing</p>
+            </a>
+
+            <a href="#photography" class="sticker-link">
+                <img src="photography.png" alt="photography section">
+                <p>photography</p>
+            </a>
+
+            <a href="#films" class="sticker-link">
+                <img src="film.png" alt="film section">
+                <p>films</p>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About</h2>
+            <p>Your about content here...</p>
+        </section>
+
+        <!-- Writing Section -->
+        <section id="writing">
+            <h2>Writing</h2>
+            <h3>Long form</h3>
+            <p>Your long form writing...</p>
+
+            <h3>Short form</h3>
+            <p>Your short form writing...</p>
+
+            <h3>Snippets</h3>
+            <p>Your snippets...</p>
+        </section>
+
+        <!-- Photography Section -->
+        <section id="photography">
+            <h2>Photography</h2>
+            <h3>Selected works</h3>
+            <p>Your selected works...</p>
+
+            <h3>Events</h3>
+            <p>Your event photos...</p>
+
+            <h3>Portraits</h3>
+            <p>Your portraits...</p>
+        </section>
+
+        <!-- Films Section -->
+        <section id="films">
+            <h2>Films</h2>
+            <p>Your films...</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Your contact info...</p>
+        </section>
+    </main>
+</body>
 </html>
